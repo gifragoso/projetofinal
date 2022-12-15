@@ -1,0 +1,71 @@
+body{
+    background-color: white;
+    width: 90%;
+    padding: 3%;
+    height: auto;
+    
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0%;
+    
+
+}
+a{ 
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    padding: 28px 0px 20px;
+    background-color: rgb(59, 121, 235);
+    text-align: justify;
+    
+
+}
+
+
+h1{
+    font-size: 22px;
+    text-align: left;
+}
+.titulo{
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}
+
+.titulo-principal{
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+h2{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+footer{ 
+    padding: 40px 0px 20px;
+    background-color: rgb(63, 143, 103);
+    color: white; 
+    text-align: center;
+}
+.tabela{
+    text-align: center;
+}
+p{ 
+    color: black;
+    font-size: 1.2rem;
+    
+    
+}
