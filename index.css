@@ -1,10 +1,112 @@
 body{
-    background-color: white;
     width: 90%;
-    padding: 3%;
-    height: auto;
-    
+    height: 90%;
+    padding: 20px;
+   
 
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(64, 151, 151);
+
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 70px;
+
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slide img{
+    width: 800px;
+    padding-top: 40px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid rgb(14, 13, 13);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px ;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left:  0;
+} 
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+} 
+
+#radio3:checked ~ .first{
+    margin-left: -55%;
+} 
+
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+
+}
+h1{
+    font-weight: 200;
+    font-size: 25px;
+    text-align: left;
 }
 
 ul{
@@ -12,28 +114,42 @@ ul{
     justify-content: space-between;
     list-style-type: none;
     margin: 0%;
-    
-
 }
+
 a{ 
-    color: white;
+    color: rgb(5, 5, 5);
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
+a:hover{
+    color: white;
+    transition: 0.3s all;
+}
+
+form{
+    background-color: blue;
+}
+
+#buscar{
+    background-color: white;
+    width: 180px;
+    height: 45px;
+    border-radius: 19px;
+    margin-top: 1%;
+    border:none;
+    outline: 0;
+    font:  1.0rem serif;
+    text-align: left;
+
+}
 nav{
     width: 100%;
     padding: 28px 0px 20px;
-    background-color: rgb(59, 121, 235);
-    text-align: justify;
-    
-
+    background-color: #3b79eb;
+    display: flex;
 }
 
-
-h1{
-    font-size: 22px;
-    text-align: left;
-}
 .titulo{
     font-size: 28px;
     text-align: center;
@@ -48,24 +164,79 @@ h1{
 
 
 h2{
-    font-size: 1.5rem;
+    font-size: 30px;
     margin: 0;
     padding: 0;
     border: 0;
-}
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 3%;
+}  
 
 footer{ 
     padding: 40px 0px 20px;
-    background-color: rgb(63, 143, 103);
-    color: white; 
+    background-color:rgb(64, 151, 151);
+    color: rgb(14, 13, 13); 
     text-align: center;
+    
 }
-.tabela{
+div img{
     text-align: center;
+    border-radius: 5px;
+    justify-content: left;
 }
+
 p{ 
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+.calculadora{
+    color: rgb(3, 3, 3);
+    font-size: 1.4rem;
+    width: 180px;
+    height: 50px;
+    border-radius: 19px;
+    border:none;
+    font: 1.0rem serif;
+    background-color:rgb(64, 151, 151);
+    padding-top: 2%;
+}
+
+.imagem2{
+    justify-content: center;
+    display: flex;
+
+}
+
+.imagem3{
+   
+    justify-content: center;
+    display: flex;
+}
+
+.imagem4{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.ajuda{
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
     
+}
+
+.causas{
+    justify-content: center;
+    display:flex
+}
+.lista{
     
+    text-align: center;
+    text-decoration: dotted;
+   
+
+
 }
